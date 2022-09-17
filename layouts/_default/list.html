@@ -6,6 +6,7 @@
 	</title>
 </head>
 <body>
+	{{ partial "header.html" . }}
 	<div id="maindiv">
 		{{ .Content -}}
 		{{- range.Pages }}
