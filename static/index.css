@@ -1,0 +1,192 @@
+body {
+	padding: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 8px;
+	margin-bottom: 0px;
+}
+
+
+#maindiv, #headerdiv, #imgdiv {
+	background-color: #101010;
+	color: #FF0000;
+
+}
+
+@media only screen and (min-width: 800px){
+	#maindiv, #headerdiv, #imgdiv {
+		margin-left: 15%;
+		margin-right: 15%;
+		border: 2px solid #FF0000;
+		border-radius: 20px;
+	}
+}
+
+@media only screen and (max-width: 800px){
+	#maindiv, #headerdiv, #imgdiv {
+		border-top: 2px solid #FF0000;
+		border-bottom: 2px solid #FF0000;
+	}
+}
+
+#headerdiv {
+	margin-bottom: 32px;
+	display: flex;
+	justify-content: space-around;
+}
+
+img {
+	border: 2px solid #FF0000;
+	border-radius: 20px;
+	margin: 16px;
+	max-width: 90%;
+}
+
+
+
+table {
+	text-align: left;
+	margin-left: 36px;
+	border: 2px solid #FF0000;
+	border-radius: 20px;
+}
+
+td:not(:empty), th {
+	color: #FF0000;
+	background: #202020;
+}
+
+
+#imgdiv img {
+	width: 90%;
+	text-align: center;
+	margin: 30px auto 4px;
+	display: block;
+}
+
+#maindiv > img {
+	margin: 30px auto 4px;
+	display: block;
+}
+
+#comparison {
+	text-align: center;
+
+}
+
+a {
+	color: #FF5000;
+}
+
+a:hover {
+	color: #FFA000;
+}
+
+
+#headerdiv a {
+	margin-top: 16px;
+	display: inline-block;
+	margin-bottom: 16px;
+	margin-right: 8%;
+	margin-left: 8%;
+
+}
+
+body {
+	background-color: #000000;
+}
+
+
+
+h1 {
+	border-bottom: 2px solid #FF0000;
+}
+
+hr {
+	border-top: 1px solid #FF0000;
+	border-bottom: none;
+	margin-left: 16px;
+	margin-right: 40%;
+}
+
+h2  {
+	text-align: left;
+	text-decoration: underline;
+	margin-left: 16px;
+
+}
+
+h3 {
+	text-align: left;
+	margin-left: 32px;
+}
+
+h4 {
+	text-align: left;
+	margin-left: 48px;
+}
+
+p, li, code, pre {
+	margin-left: 48px;
+	margin-right: 48px;
+	text-align: left;
+}
+
+p code, li code{
+	/* Code that appears inline - no need for margin */
+	/* <pre> is used for code blocks */
+	margin: 0px;
+}
+
+code {
+	background-color: #000000;
+}
+
+blockquote {
+	border-left: 2px solid #FF0000;
+	margin-left: 46px;
+	opacity: 70%;
+}
+
+pre {
+	border-left: 1px dashed #FF0000;
+	padding-left: 16px;
+}
+
+li p {
+	/* li already handles margin*/
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+
+#imgdiv p {
+	text-align: center;
+}
+
+
+h1 {
+	text-align: center;
+}
+
+::selection {
+	background: #FF0000;
+	color: #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
