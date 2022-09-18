@@ -1,7 +1,23 @@
 <div id="headerdiv">
+	{{ if eq .Title "Home" }}
+	<a>Home</a>
+	{{ else }}
 	<a href="/index.html">Home</a>
+	{{ end }}
+	{{ if eq .Title "Pictures" }}
+	<a>Pictures</a>
+	{{ else }}
 	<a href="/pics">Pictures</a>
+	{{ end }}
+	{{ if eq .Title "Blog" }}
+	<a>Blog</a>
+	{{ else }}
 	<a href="/blog">Blog</a>
+	{{ end }}
+	{{ if eq .Title "CV" }}
+	<a>CV</a>
+	{{ else }}
 	<a href="/cv">CV</a>
+	{{ end }}
 </div>
 
