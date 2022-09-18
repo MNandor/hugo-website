@@ -5,6 +5,8 @@ date: 2022-09-17T16:30:54+03:00
 
 # Welcome
 
+![text](/img/reallifepfp.png)
+
 ## About Me
 
 My name is Nándor.
@@ -34,3 +36,5 @@ Tabs over spaces. Sue me.
 I know just enough HTML/CSS to have made this website. I also know Javascript, but I don't feel the need to execute any code on this page.
 
 I speak English, Hungarian, some Romanian, some German, and an ever-so-tiny amount of Japanese.
+
+
