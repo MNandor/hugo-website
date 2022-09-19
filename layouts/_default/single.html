@@ -8,6 +8,11 @@
 <body>
 	{{ partial "blogheader.html" . }}
 	<div id="maindiv">
+		<h1>{{ .Title }}</h1>
+
+		<p>{{ .Date.Format "2006 Jan 02" }}</p>
+		<hr>
+
 		{{ .Content -}}
 	</div>
 </body>
