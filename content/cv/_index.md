@@ -16,11 +16,11 @@ Like the design? Feel free to use the template here.
 
 ## Android
 
-### Wout
+### [Wout](https://github.com/MNandor/wout/)
 
 A simple workout tracker app using RoomDB.
 
-### QuickestNotes
+### [QuickestNotes](https://github.com/MNandor/QuickestNotes/)
 
 Minimalistic note-taking app with no additional dependencies.
 
@@ -30,15 +30,15 @@ Task management app including expense tracking, projects view, and habit trackin
 
 ## Python
 
-### Project Exodos
+### [Project Exodos](https://github.com/MNandor/Project-Exodos)
 
 BSc project. Use machine learning to understand computer usage of the user.
 
-### Joplin-to-Anki
+### [Joplin-to-Anki](https://github.com/MNandor/joplin-to-anki)
 
 Syncing script between Joplin tables (or Markdown in general) and Anki cards.
 
-### Cool Maze
+### [Cool Maze](https://github.com/MNandor/CoolMaze)
 
 A mesmerizing animation generating random mazes and traversing them using pathfinding algorithms.
 
@@ -56,19 +56,19 @@ A mesmerizing animation generating random mazes and traversing them using pathfi
 
 ## Linux
 
-### My Dotfiles
+### [My Dotfiles](https://github.com/MNandor/dotfiles)
 
-### Archinstall Rice
+### [Archinstall Rice](https://github.com/MNandor/archinstall-rice)
 
 ### Home Server
 
 ## Other
 
-### CV Template
+### [CV Template](https://github.com/MNandor/cv)
 
-### This Website
+### [This Website](https://github.com/MNandor/mnandor.github.io)
 
-### Anki Card Templates
+### [Anki Card Templates](https://github.com/MNandor/anki-cards)
 
 ### Git Cheat Sheet
 
