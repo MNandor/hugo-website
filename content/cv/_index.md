@@ -6,11 +6,11 @@ date: 2022-09-17T16:53:47+03:00
 
 # My CV
 
-Click here to download my one-page CV.
+Click [here](/pdf/Nandor.pdf) to download my one-page CV.
 
-Want to know more about me? Here's the same CV with more details (3 pages).
+Want to know more about me? [Here](/pdf/Nandor_long.pdf)'s the same CV with more details (3 pages).
 
-Like the design? Feel free to use the template here.
+Like the design? Feel free to use the template [here](https://github.com/MNandor/cv).
 
 # My Projects
 
