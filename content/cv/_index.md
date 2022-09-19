@@ -44,21 +44,37 @@ A mesmerizing animation generating random mazes and traversing them using pathfi
 
 ### Project Ragnarok
 
+A set of task- and time management scripts.
+
 ### Ispent
+
+Track and summarize money spending.
 
 ### Reddit Browser
 
+Basic reddit client for quick browsing.
+
 ### Youtube Subscription Manager
 
-### Epcounter
+Check Youtube subscriptions using RSS feeds.
+
+### [Epcounter](https://github.com/MNandor/epcounter)
+
+Script that keeps track of episodes in TV shows.
 
 ### Spectotabs
+
+Generate guitar tabs from musical spectrograms.
 
 ## Linux
 
 ### [My Dotfiles](https://github.com/MNandor/dotfiles)
 
+Configuration files for bash, vim, and others.
+
 ### [Archinstall Rice](https://github.com/MNandor/archinstall-rice)
+
+Files necessary for my reproducible install.
 
 ### Home Server
 
@@ -66,11 +82,25 @@ A mesmerizing animation generating random mazes and traversing them using pathfi
 
 ### [CV Template](https://github.com/MNandor/cv)
 
+Latex template for my personal CV.
+
 ### [This Website](https://github.com/MNandor/mnandor.github.io)
+
+HTML/CSS/JS personal portfolio website. Replaced by Hugo version.
+
+### [Hugo Website](https://github.com/MNandor/hugo-website)
+
+This same website rewritten in the Hugo framework.
 
 ### [Anki Card Templates](https://github.com/MNandor/anki-cards)
 
+Utilizing Javascript in templated for the flashcard program Anki.
+
 ### Git Cheat Sheet
 
+Cheat sheet for the Version Control System Git.
+
 ### Vim Cheat Sheet
+
+Cheat sheet for the text editor Vim.
 
