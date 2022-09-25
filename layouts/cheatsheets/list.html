@@ -1,0 +1,16 @@
+<head>
+	<link rel="stylesheet" type="text/css" href="/css/index.css">
+	<link rel="icon" href="/img/icon.png">
+	<title>
+		Nándor - {{ .Title }}
+	</title>
+</head>
+<body>
+	{{ partial "header.html" . }}
+	<div id="maindiv">
+		{{ .Content -}}
+		{{- range .Pages.ByTitle }}
+			<h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+		{{ end -}}
+	</div>
+</body>

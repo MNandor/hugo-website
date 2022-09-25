@@ -19,5 +19,10 @@
 	{{ else }}
 	<a href="/cv">CV</a>
 	{{ end }}
+	{{ if eq .Title "Cheatsheets" }}
+	<a>Cheatsheets</a>
+	{{ else }}
+	<a href="/cheatsheets">Cheatsheets</a>
+	{{ end }}
 </div>
 
