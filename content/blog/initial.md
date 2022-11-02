@@ -62,3 +62,4 @@ def test(v):
 How about `code();` in a paragraph?
 
 {{< cmark >}} hello {{< xmark >}} {{< tmark >}} {{< fmark >}}
+{{< ul >}} hey {{< / ul >}}
