@@ -1,6 +1,7 @@
 ---
 title: "Build Gradle"
 date: 2022-11-02T10:31:56+02:00
+progress: "progress"
 ---
 
 ## Kotlin-kapt
