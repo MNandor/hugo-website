@@ -1,5 +1,5 @@
 ---
-title: "Build Gradle"
+title: "build.gradle"
 date: 2022-11-02T10:31:56+02:00
 progress: "progress"
 ---
