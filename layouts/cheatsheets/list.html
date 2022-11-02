@@ -10,7 +10,18 @@
 	<div id="maindiv">
 		{{ .Content -}}
 		{{- range .Pages.ByTitle }}
-			<h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+		<h2>
+			{{ if eq .Params.progress "done" }}
+			{{ partial "cmark.html" }}
+			{{ else if eq .Params.progress "progress" }}
+			{{ partial "tmark.html" }}
+			{{ else if or (eq .Params.progress "folder") (eq .BundleType "branch") }}
+			{{ partial "fmark.html" }}
+			{{ else }}
+			{{ partial "xmark.html" }}
+			{{ end }}
+			<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+		</h2>
 		{{ end -}}
 	</div>
 </body>
