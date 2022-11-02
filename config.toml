@@ -1,3 +1,4 @@
 baseURL = 'http://nandor.ml'
 languageCode = 'en-us'
 title = 'Nándor'
+enableGitInfo = true
