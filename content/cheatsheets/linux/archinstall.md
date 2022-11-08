@@ -1,7 +1,7 @@
 ---
 title: "Archinstall"
 date: 2022-09-25T15:14:28+03:00
-progress: progress
+progress: done
 ---
 
 Arch Linux is a Linux {{< abbr `distribution`>}}distro{{< / abbr >}} that's *relatively* hard to install.
@@ -372,3 +372,70 @@ grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
 # Graphical Environment
+
+Good news!
+You have a functional Arch system.
+Of course, in its current state it'll only boot into a {{< abbr `non-graphical terminal`>}}tty{{< / abbr >}}
+
+We have options here.
+
+I recommend {{< ul >}}xfce{{< / ul >}} as a lightweight desktop environment.
+
+I personally use just xfce's terminal along with {{< ul >}}Qtile{{< / ul >}} as my window manager.
+
+We can also use Wayland instead of Xorg, but I'm personally happy with Xorg.
+
+Install your software of choice using pacman:
+
+```bash
+sudo pacman -S xorg lightdm lightdm-gtk-greeter qtile xfce4-terminal
+```
+
+```bash
+sudo pacman -S xorg lightdm lightdm-gtk-greeter xfce4 xfce4-goodies
+```
+
+## Systemctl
+
+SystemD is the init system of Arch.
+Let's enable some daemons so we have graphics and internet:
+
+```bash
+sudo systemctl enable lightdm
+sudo systemctl enable NetworkManager
+```
+
+## Virtualbox
+
+If using a Virtualbox VM, these can also be useful:
+
+```bash
+sudo pacman -S virtualbox-guest-utils
+sudo systemctl enable vboxservice.service
+```
+
+
+## Other
+
+If using bluetooth headphones, try the following setup:
+
+```bash
+pacman -S bluez bluez-utils pulseaudio-bluetooth
+systemctl enable bluetooth
+```
+
+Otherwise, just install either `pipewire` or `pulseaudio`.
+```bash
+pacman -S pipewire
+```
+
+## Reboot
+
+We're done!
+Exit the installation environment, unplug the flash drive, and boot into the new system:
+
+```bash
+exit
+umount -l /mnt
+reboot
+```
