@@ -1,6 +1,7 @@
 ---
 title: "Archinstall"
 date: 2022-09-25T15:14:28+03:00
+progress: progress
 ---
 
 Arch Linux is a Linux {{< abbr `distribution`>}}distro{{< / abbr >}} that's *relatively* hard to install.
@@ -124,6 +125,61 @@ pacman -Syyy
 # Hard Drive
 
 ## Partitions
+
+Use `lsblk` and find the drive. It's usually `sda` or `nvme0n1`.
+As a shorthand, I will run `drive="sda"` so I can reference the drive name easier.
+
+Use `gdisk` or an alternative to create partitions:
+
+```bash
+gdisk /dev/$drive
+```
+
+I personally don't make separate home or swap partitions. Here's how to make a boot and a main:
+
+- press `n` `␣` `␣` `+200M` `ef00` to create a 200MB boot partition
+- press `n` `␣` `␣` `␣` `␣` to use the rest of the drive as storage
+- press `w` to save changes and exit
+
+I will run `part=sda2` and `partefi=sda1` to easily refer to these partitions.
+If your setup differs, use the proper partition labels.
+
+## Encryption
+
+Encrypting your partition makes it so you have to give a password on boot, otherwise your data is inaccessible.
+Technically, there is some performance drawback to this, but to me it's not noticeable.
+
+You probably don't need encryption in a VM except for practice.
+You might not need encryption in a desktop PC either.
+
+```bash
+cryptsetup -y -v luksFormat /dev/$part
+cryptsetup open /dev/$part cryptroot
+```
+
+Since we want to install *inside* the encrypted partition, we need to update our shorthand with `part="mapper/cryptroot"`.
+
+## Filesystems
+
+Fairly easy.
+Create the file systems for the two partitions.
+
+```bash
+mkfs.ext4 /dev/$part
+mkfs.fat -F32 /dev/$partefi
+```
+
+## Mounting
+
+We need to have the partitions mounted for the install process.
+The efi partition gets mounted inside the main one.
+
+```bash
+mount /dev/$part /mnt`
+mkdir /mnt/boot`
+mount /dev/$partefi /mnt/boot`
+```
+
 
 # Installation
 
