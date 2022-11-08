@@ -139,6 +139,9 @@ p code, li code{
 	/* Code that appears inline - no need for margin */
 	/* <pre> is used for code blocks */
 	margin: 0px;
+	padding: 1px;
+	border: 1px solid red;
+	color: yellow;
 }
 
 code {
@@ -149,6 +152,14 @@ blockquote {
 	border-left: 2px solid #FF0000;
 	margin-left: 46px;
 	opacity: 70%;
+}
+
+pre code {
+	color: yellow;
+}
+
+pre{
+	background-color: black; !important
 }
 
 pre {
