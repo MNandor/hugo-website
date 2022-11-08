@@ -183,6 +183,33 @@ mount /dev/$partefi /mnt/boot`
 
 # Installation
 
+## Pacstrap
+
+The command `pacstrap` is used to install Arch packages into a different root directory.
+You can think the Arch iso as its own Arch system that installs a second Arch into the partitions newly created.
+
+```bash
+pacstrap /mnt base linux linux-firmware base-devel vim
+```
+
+Optionally, also install `amd-ucode` or `intel-ucode`.
+
+## Fstab
+
+Save the File System Table to a file:
+
+```bash
+genfstab -U /mnt >> /mnt/etc/fstab
+```
+
+## Chroot
+
+Change Root into the new Arch system to operate from there:
+
+```bash
+arch-chroot /mnt
+```
+
 # Inside Chroot
 
 # Graphical Environment
