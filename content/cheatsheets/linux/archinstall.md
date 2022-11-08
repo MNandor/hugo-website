@@ -212,4 +212,163 @@ arch-chroot /mnt
 
 # Inside Chroot
 
+## Swapfile
+
+We didn't create a swap partitions, but we can create a swap file.
+A swap file is a section on your hard drive that's used when the RAM is full.
+It's also useful for hybernation.
+It's optional and its usefulness depends on your system.
+
+```bash
+fallocate -l 16GB /swapfile`
+chmod 600 /swapfile`
+mkswap /swapfile`
+swapon /swapfile`
+```
+
+Use your favorite terminal-based text editor (mine is vim) to add this line:
+
+`vim /etc/fstab`
+```text
+/swapfile none swap defaults 0 0`
+```
+
+## Time
+
+Select your timezone and save it:
+
+```bash
+ln -sf /usr/share/zoneinfo/Europe/Bucharest /etc/localtime`
+hwclock --systohc`
+```
+
+## Locale
+
+First, uncomment the following line:
+
+`vim /etc/locale.gen`
+```text
+en_US.UTF-8
+```
+
+Run this command:
+
+```bash
+locale-gen
+```
+
+And one last file to edit:
+
+`vim /etc/locale.conf`
+```text
+LANG=en_US.UTF-8`
+```
+
+## Hostname
+
+Time to name your computer.
+This name will be visible to networks you connect to.
+
+`vim /etc/hostname`
+```text
+n-archlaptop
+```
+
+A bit more editing to do:
+
+`vim /etc/hosts`
+```text
+127.0.0.1	localhost
+::1	localhost
+127.0.1.1	n-archlaptop.localdomain	n-archlaptop
+```
+
+## Pacman
+
+Pacman is Arch's package manager.
+Get some more programs we didn't pacstrap earlier:
+
+```bash
+pacman -S sudo grub efibootmgr networkmanager dosfstools os-prober mtools git openssh stow
+```
+
+
+## Users
+
+You are currently the `root` account. Set a password:
+
+```bash
+passwd
+```
+
+I will set up one user with sudo rights named `n`.
+
+```bash
+useradd -m n
+passwd n
+usermod -aG wheel,audio,video,optical,storage n`
+```
+
+Exclude the `wheel` group to make a non-sudo user.
+Adding more users follows the same process.
+
+## Sudo
+
+Running a program with `sudo` essentially gives administrator rights. Uncomment the following line:
+
+`EDITOR=vim visudo`
+
+```text
+%wheel ALL=(ALL) ALL
+```
+
+There is also a variant of the line that allows for running sudo without even requiring a password, but I recommend this one.
+
+## Decryption
+
+Skip this if you skipped encryption.
+
+To automatically decrypt our drive, we need to add `encrypt` to out boot hooks.
+Here's the sample line:
+
+`vim /etc/mkinitcpio.conf`
+
+```text
+HOOKS=(base udev autodetect keyboard keymap modconf block encrypt filesystems keyboard fsck)
+```
+
+To apply these changes, run:
+
+```bash
+mkinitcpio -p linux
+```
+
+## Grub
+
+Install the bootloader using these commands:
+
+```bash
+grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
+grub-mkconfig -o /boot/grub/grub.cfg
+```
+
+## Decryption With Grub
+
+With Grub installed, we need to come back to decryption for a moment and add the driver's unique ID to the Grub config:
+
+`vim /etc/default/grub`
+```text
+GRUB_CMDLINE_LINUX="cryptdevice=UUID=f5...c7:cryptroot root=/dev/mapper/cryptroot"
+```
+
+Replace the `f5...c7` part with the actual ID as given by `blkid`. 
+
+Pro tip: it's hard to copy-paste without a graphical environment. Try `:r !blkid` inside vim instead.
+
+Just for good measure, update the Grub config:
+
+```bash
+grub-mkconfig -o /boot/grub/grub.cfg
+```
+
 # Graphical Environment
