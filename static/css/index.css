@@ -160,6 +160,10 @@ pre code {
 
 pre{
 	background-color: black; !important
+	overflow: auto !important;
+	word-break: normal !important;
+	word-wrap: normal !important;
+	white-space: pre-wrap !important;
 }
 
 pre {
