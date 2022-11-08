@@ -8,6 +8,9 @@ for (i=0; i<ul.length; i++){
 	l = ul[i]
 	namee = l.children[0].innerText
 
+	if (l.innerText.includes("(optional)"))
+		continue
+
 	if (l.innerText.startsWith('p '))
 		pacman.push(namee)
 	else if (l.innerText.startsWith('y'))
@@ -16,7 +19,7 @@ for (i=0; i<ul.length; i++){
 		pip.push(namee)
 }
 
-document.write("pacman -S ")
+document.write("sudo pacman -S ")
 for (i=0; i<pacman.length; i++){
 	document.write(pacman[i], " ")
 }
