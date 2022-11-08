@@ -439,3 +439,62 @@ exit
 umount -l /mnt
 reboot
 ```
+
+# Postinstall
+
+## Syu
+
+You probably want to update first.
+Memorize this command.
+Arch being a rolling release, it should be used every few days.
+
+```bash
+sudo pacman -Syu
+```
+
+## Yay
+
+Yay is the package manager for the {{< abbr `Arch User Repository` >}}AUR{{< / abbr >}}.
+One of the main reasons to run Arch. You probably want it.
+
+```bash
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+cd ..
+rm -rf yay
+```
+
+## Python
+
+Python is a great programming/scripting language. It comes with its own package manager called `pip`.
+
+```bash
+sudo pacman -S python3 python-pip
+```
+
+## Gvim
+
+The default `vim` package doesn't come with Xorg clipboard support, while `gvim` does.
+
+```bash
+sudo pacman -R vim
+sudo pacman -S gvim
+```
+
+## Desktop
+
+These programs help customize the look of your desktop. The `dbus-next` package is used by Qtile for desktop notifications (like from `notify-send`).
+
+```bash
+pip3 install dbus-next
+sudo pacman -S lxappearance lightdm-gtk-greeter-settings
+```
+
+## Further
+
+To get my exact environment, see:
+
+- [my dotfiles](https://github.com/MNandor/dotfiles)
+- [my rice config](https://github.com/MNandor/archinstall-rice)
+- [my package list](../arch-packages)
