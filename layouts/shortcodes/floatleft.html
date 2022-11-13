@@ -1,0 +1,19 @@
+<div class="flex-container">
+   <div class="flex-items">
+		<img src="/img/{{ .Get 0 }}.png" style=""></img>
+   </div>
+   <div class="flex-items" style="">
+		{{ .Inner }}
+   </div>
+</div>
+
+<style>
+	.flex-container {
+	  display: flex;
+	  flex-direction: row;
+	  flex-wrap: nowrap;
+	  justify-content: normal;
+	  align-items: normal;
+	  align-content: normal;
+	}
+</style>

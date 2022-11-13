@@ -2,3 +2,5 @@ baseURL = 'http://nandor.ml'
 languageCode = 'en-us'
 title = 'Nándor'
 enableGitInfo = true
+[markup.goldmark.renderer]
+	unsafe= true
