@@ -5,13 +5,17 @@ date: 2022-09-17T16:30:54+03:00
 
 # Welcome
 
-![text](/img/reallifepfp.png)
+
+{{% floatleft reallifepfp %}}
 
 ## About Me
 
 My name is Nándor.
 
 I like free and open source software.
+
+
+{{% / floatleft %}}
 
 ## Android
 
