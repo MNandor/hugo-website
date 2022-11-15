@@ -1,0 +1,14 @@
+<head>
+	<link rel="stylesheet" type="text/css" href="/css/index.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<link rel="icon" href="/img/icon.png">
+	<title>
+		Nándor - {{ .Title }}
+	</title>
+</head>
+<body>
+	{{ partial "header.html" . }}
+	<div id="maindiv">
+		{{ .Content -}}
+	</div>
+</body>
