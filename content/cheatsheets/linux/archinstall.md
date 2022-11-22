@@ -228,10 +228,9 @@ swapon /swapfile`
 
 Use your favorite terminal-based text editor (mine is vim) to add this line:
 
-`vim /etc/fstab`
-```text
+{{% vim `/etc/fstab` %}}
 /swapfile none swap defaults 0 0`
-```
+{{% / vim %}}
 
 ## Time
 
@@ -246,10 +245,9 @@ hwclock --systohc`
 
 First, uncomment the following line:
 
-`vim /etc/locale.gen`
-```text
+{{% vim `/etc/locale.gen` %}}
 en_US.UTF-8
-```
+{{% / vim %}}
 
 Run this command:
 
@@ -259,29 +257,26 @@ locale-gen
 
 And one last file to edit:
 
-`vim /etc/locale.conf`
-```text
+{{% vim `/etc/locale.conf` %}}
 LANG=en_US.UTF-8`
-```
+{{% / vim %}}
 
 ## Hostname
 
 Time to name your computer.
 This name will be visible to networks you connect to.
 
-`vim /etc/hostname`
-```text
+{{% vim `/etc/hostname` %}}
 n-archlaptop
-```
+{{% / vim %}}
 
 A bit more editing to do:
 
-`vim /etc/hosts`
-```text
+{{% vim `/etc/hosts` %}}
 127.0.0.1	localhost
 ::1	localhost
 127.0.1.1	n-archlaptop.localdomain	n-archlaptop
-```
+{{% / vim %}}
 
 ## Pacman
 
@@ -314,13 +309,15 @@ Adding more users follows the same process.
 
 ## Sudo
 
-Running a program with `sudo` essentially gives administrator rights. Uncomment the following line:
+Running a program with `sudo` essentially gives administrator rights.
 
-`EDITOR=vim visudo`
+Note: while we could edit the file directly, the `visudo` utility runs some extra checks before saving the file to make sure we don't lock ourselves out.
 
-```text
+Uncomment the following line:
+
+{{% vim `EDITOR=vim visudo` %}}
 %wheel ALL=(ALL) ALL
-```
+{{% / vim %}}
 
 There is also a variant of the line that allows for running sudo without even requiring a password, but I recommend this one.
 
@@ -331,11 +328,10 @@ Skip this if you skipped encryption.
 To automatically decrypt our drive, we need to add `encrypt` to out boot hooks.
 Here's the sample line:
 
-`vim /etc/mkinitcpio.conf`
+{{% vim `/etc/mkinitcpio.conf` %}}
 
-```text
 HOOKS=(base udev autodetect keyboard keymap modconf block encrypt filesystems keyboard fsck)
-```
+{{% / vim %}}
 
 To apply these changes, run:
 
@@ -356,10 +352,9 @@ grub-mkconfig -o /boot/grub/grub.cfg
 
 With Grub installed, we need to come back to decryption for a moment and add the driver's unique ID to the Grub config:
 
-`vim /etc/default/grub`
-```text
+{{% vim `/etc/default/grub` %}}
 GRUB_CMDLINE_LINUX="cryptdevice=UUID=f5...c7:cryptroot root=/dev/mapper/cryptroot"
-```
+{{% / vim %}}
 
 Replace the `f5...c7` part with the actual ID as given by `blkid`. 
 
