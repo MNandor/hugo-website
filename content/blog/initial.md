@@ -41,11 +41,11 @@ Two|Two|Four
 
 How does this gray square look?
 
-![square fallback text](/df26cfa3c16ea7990274cdcb1de53a05.png)
+![square fallback text](/img/df26cfa3c16ea7990274cdcb1de53a05.png)
 
 How about this wide picture?
 
-![wide fallback text](/1fcd305cb0a829c70c8dbcced4ae49de.png)
+![wide fallback text](/img/1fcd305cb0a829c70c8dbcced4ae49de.png)
 
 ```
 python def test(v): print('how about this code?')
