@@ -15,6 +15,18 @@ progress: progress
 - free/open-source
 - network/server not required
 
+
+### Graphical Clients
+
+{{< figure src="/img/sourcetree.png" title="Sourcetree" link="https://sourcetreeapp.com" >}}
+
+{{< figure src="/img/github.png" title="Github Desktop" link="https://desktop.github.com" >}}
+
+{{< figure src="/img/gitkraken.png" title="GitKraken" link="https://www.gitkraken.com/" >}}
+
+{{< figure src="/img/gitgui.png" title="Git GUI" link="https://git-scm.com" >}}
+
+
 {{% / floatleft %}}
 
 ## Command Tables
@@ -264,6 +276,16 @@ pull.rebase=true
 		text-decoration: overline 1px yellow;
 		color: yellow;
 		
+	}
+	figure {
+		display: inline-block;
+		width: 24%;
+		margin: 0px;
+	}
+	figcaption h4 {
+		text-align: center;
+		margin-left: 0px;
+		margin-top: 0px;
 	}
 
 </style>
