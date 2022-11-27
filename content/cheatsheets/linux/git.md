@@ -16,20 +16,25 @@ progress: progress
 - network/server not required
 
 
-### Graphical Clients
+## Graphical Clients
 
-{{< figure src="/img/sourcetree.png" title="Sourcetree" link="https://sourcetreeapp.com" >}}
+- frontend to git commands
+- provide some helpful visualizations
+- I recommend learning the commands themselves
 
-{{< figure src="/img/github.png" title="Github Desktop" link="https://desktop.github.com" >}}
+{{< figure src="/img/sourcetree.png" title="Sourcetree" link="https://sourcetreeapp.com" class="guiclient">}}
 
-{{< figure src="/img/gitkraken.png" title="GitKraken" link="https://www.gitkraken.com/" >}}
+{{< figure src="/img/github.png" title="Github Desktop" link="https://desktop.github.com" class="guiclient">}}
 
-{{< figure src="/img/gitgui.png" title="Git GUI" link="https://git-scm.com" >}}
+{{< figure src="/img/gitkraken.png" title="GitKraken" link="https://www.gitkraken.com/" class="guiclient">}}
+
+{{< figure src="/img/gitgui.png" title="Git GUI" link="https://git-scm.com" class="guiclient">}}
 
 
 {{% / floatleft %}}
 
-## Command Tables
+My notes contain Markdown/HTML tables in this format.
+This is to make it easy to export them. See [J2A](https://github.com/MNandor/joplin-to-anki).
 
 Front|Hotkey|Command|Notes|Perskey
 -|-|-|-|-
@@ -37,23 +42,52 @@ Start git repo||git init||
 
 # Commits
 
+
+{{% floatleft commit %}}
+
+## What's a commit?
+
+- one "version" of the code
+- standard unit of a git repository
+- contains a list of changes
+- references previous commit
+- one link in a linked list
+- information about commit author
+- commit message
+- defined by a unique commit hash
+
+{{% / floatleft %}}
+
 ## Staging
+
+To prepare a changed, added, or removed (see below) file for a commit, it needs to be added to an in-between placed called the {{< ul >}}staging area{{< / ul >}}.
+
+Some commands take the option `--cached` or `--staged` to interact with the staging area. This is not consistent between commands.
 
 Front|Hotkey|Command|Notes|Perskey
 -|-|-|-|-
 Stage changed file||git add filename||
 Stage all files in this folder and subfolders||git add .<br>git add &ast;||
-Add a "hunk" of code from the terminal||git add -p filename<br>git add --patch filename|
+Stage a "hunk" of code from the terminal||git add -p filename<br>git add \--patch filename|
+&nbsp;|
+Delete a file from disk and staging area||git rm filename
+Delete a file staging area but not disk||git rm \--cached filename
 
 ## Committing
 
+Committing is the act of recording the changes in the staging area into a commit.
+
+For the commit message, the convention is to write it as an imperative. For example, "This commit will {{< ul >}}Implement image loading API{{< / ul >}}".
+
 Front|Hotkey|Command|Notes|Perskey
 -|-|-|-|-
-Create commit?||git commit -m "Message"<br>git commit --message "Message"||
-Amend last commit?||git commit --amend||
+Create commit||git commit -m "Message"<br>git commit --message "Message"||
+Amend last commit||git commit --amend||
 Auto stage all modified and deleted files (but not new ones) while committing||git commit -a<br>git commit --all
-&nbsp;|
-Take individual commit from elsewhere||git cherry-pick commithash|This creates a different commit with identical changes|
+
+{{< figure src="/img/gitareas1.png" width="100%" >}}
+
+# Undo
 
 
 ## Resets
@@ -68,8 +102,6 @@ Unstage everything, but keep files as they are currently||git reset --mixed<br>g
 Mark a commit as last but don't change files or staging area||git reset --soft
 Undo the action of "git commit"||git reset --soft HEAD~1|
 &nbsp;|
-Delete a file from disk and staging area||git rm filename
-Delete a file staging area but not disk||git rm --cached filename
 &nbsp;|
 Stage file that's in .gitignore||git add -f filename
 
@@ -277,7 +309,7 @@ pull.rebase=true
 		color: yellow;
 		
 	}
-	figure {
+	.guiclient {
 		display: inline-block;
 		width: 24%;
 		margin: 0px;
@@ -297,3 +329,4 @@ pull.rebase=true
 
 `@:a` displays the content of `a` "as of" commit `@`.
 {{% / mnemonic %}}
+Take individual commit from elsewhere||git cherry-pick commithash|This creates a different commit with identical changes|
