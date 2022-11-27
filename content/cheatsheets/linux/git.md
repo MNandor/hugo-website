@@ -268,3 +268,10 @@ pull.rebase=true
 
 </style>
 {{< / raw >}}
+
+{{% mnemonic `@ a - @:a` %}}
+
+`@ a` displays the changes made to the file `a` in commit `@`.
+
+`@:a` displays the content of `a` "as of" commit `@`.
+{{% / mnemonic %}}
