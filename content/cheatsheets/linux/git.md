@@ -42,6 +42,7 @@ Start git repo||git init||
 
 # Commits
 
+asd --asd-- ddd
 
 {{% floatleft commit %}}
 
@@ -70,8 +71,8 @@ Stage changed file||git add filename||
 Stage all files in this folder and subfolders||git add .<br>git add &ast;||
 Stage a "hunk" of code from the terminal||git add -p filename<br>git add \--patch filename|
 &nbsp;|
-Delete a file from disk and staging area||git rm filename
-Delete a file staging area but not disk||git rm \--cached filename
+Delete a file from disk and staging area||git rm filename|Also works on already deleted files
+Delete a file staging area but not disk||git rm \--cached filename|Also works on already deleted files
 
 ## Committing
 
@@ -319,6 +320,10 @@ pull.rebase=true
 		margin-left: 0px;
 		margin-top: 0px;
 	}
+
+@media print {
+	table td:nth-child(3) { color: black; }
+}
 
 </style>
 {{< / raw >}}

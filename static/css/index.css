@@ -54,6 +54,7 @@ table {
 	border-radius: 20px;
 }
 
+
 td:not(:empty), th {
 	color: #FF0000;
 	background: #202020;
@@ -164,9 +165,6 @@ pre{
 	word-break: normal !important;
 	word-wrap: normal !important;
 	white-space: pre-wrap !important;
-}
-
-pre {
 	border-left: 1px dashed #FF0000;
 	padding-left: 16px;
 }
@@ -192,19 +190,10 @@ h1 {
 	color: #000000;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media print {
+	h1 {page-break-before: always;}
+	table {page-break-inside: avoid; }
+	p,li,h1,h2,h3,h4,code,td,th,pre,span, body p code, body li code, table td:not(:empty), body table td code { color: black; !important }
+	img, table { border-color: black; !important }
+}
 
