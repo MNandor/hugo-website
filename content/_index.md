@@ -8,12 +8,16 @@ date: 2022-09-17T16:30:54+03:00
 
 {{% floatleft reallifepfp %}}
 
+
 ## About Me
 
 My name is Nándor.
 
 I like free and open source software.
 
+> Life is not measured by the number of breaths we take, but by the moments that take our breath away.
+> 
+> \- ChatGPT
 
 {{% / floatleft %}}
 

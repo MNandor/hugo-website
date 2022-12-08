@@ -155,6 +155,11 @@ blockquote {
 	opacity: 70%;
 }
 
+blockquote p{
+	margin-left: 16px;
+}
+
+
 pre code {
 	color: yellow;
 }
