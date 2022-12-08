@@ -9,11 +9,13 @@ date: 2022-09-17T16:30:54+03:00
 {{% floatleft reallifepfp %}}
 
 
-## About Me
+## Hi, I'm Nándor
 
-My name is Nándor.
+I develop Android applications for a living.
 
-I like free and open source software.
+I contribute to open-source when I can, mostly small fixes and improvements to software I use myself. I also open-source the programs I write.
+
+I enjoy hiking in nature, tinkering with computers, and learning languages.
 
 > Life is not measured by the number of breaths we take, but by the moments that take our breath away.
 > 
