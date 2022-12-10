@@ -9,25 +9,20 @@ date: 2022-09-17T16:30:54+03:00
 {{% floatleft reallifepfp %}}
 
 
-## Hi, I'm Nándor
+## Hi, I'm Nándor.
 
-I develop Android applications for a living.
+As an Android developer, I am passionate about creating engaging and user-friendly mobile apps that deliver a great experience for users. With the rapid growth and evolution of the Android platform, there are always new and exciting opportunities to explore, and I am constantly learning and growing as a developer to stay at the forefront of the industry.
 
-I contribute to open-source when I can, mostly small fixes and improvements to software I use myself. I also open-source the programs I write.
+Whether I am working on a new app from scratch, or optimizing and improving an existing app, I am dedicated to delivering high-quality apps that are reliable, performant, and user-friendly.
 
-I enjoy hiking in nature, tinkering with computers, and learning languages.
+I am also an advocate of open-source software, and believe in the power of collaboration and community to drive innovation and progress in the tech industry. In my work as an Android developer, I strive to create apps that are useful, user-friendly, and adhere to the principles of open-source software.
+
 
 > Life is not measured by the number of breaths we take, but by the moments that take our breath away.
 > 
 > \- ChatGPT
 
 {{% / floatleft %}}
-
-## Android
-
-I currently work as an Android developer in Java and Kotlin.
-
-I've been working in Agile teams and got to work on applications connecting to IoT devices.
 
 ## Linux
 
@@ -47,4 +42,5 @@ I know just enough HTML/CSS to have made this website. I also know Javascript, b
 
 I speak English, Hungarian, some Romanian, some German, and an ever-so-tiny amount of Japanese.
 
+I enjoy hiking in nature, tinkering with computers, and learning languages.
 
