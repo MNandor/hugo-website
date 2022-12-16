@@ -1,10 +1,7 @@
 ---
-title: "CV"
+title: "My CV"
 date: 2022-09-17T16:53:47+03:00
 ---
-
-
-# My CV
 
 Click [here](/pdf/Nandor.pdf) to download my one-page CV.
 
