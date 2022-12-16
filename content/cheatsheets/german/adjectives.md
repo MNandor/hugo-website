@@ -14,7 +14,7 @@ table tbody tr td {
 {{% / raw %}}
 
 
-## Articles Only
+# Articles Only
 
 Nominativ|Akkusativ|Dativ|Genitiv<!-- j2aignore -->
 -|-|-|-
@@ -30,7 +30,7 @@ Nominativ|Akkusativ|Dativ|Genitiv<!-- j2aignore -->
 <span style="color:#00FF00">die(pl)</span>  Kinder|←<span style="opacity:35%">die </span>  Kinder|den  Kinder{{% ul %}}n{{% / ul %}}|↑<span style="opacity:35%">der </span> Kinder
 <span style="color:#00FF00">keine</span>  Kinder|←<span style="opacity:35%">keine </span> Kinder|keinen  Kinder{{% ul %}}n{{% / ul %}}|↑<span style="opacity:35%">keiner </span> Kinder
 
-## Adjectives
+# Adjectives
 
 Nominativ|Akkusativ|Dativ|Genitiv<!-- j2aignore -->
 -|-|-|-
