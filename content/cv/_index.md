@@ -3,7 +3,7 @@ title: "My CV"
 date: 2022-09-17T16:53:47+03:00
 ---
 
-Click [here](/pdf/Nandor.pdf) to download my one-page CV.
+Click [here](/pdf/Nandor_Android.pdf) to download my one-page CV as a Mobile Developer.
 
 Want to know more about me? [Here](/pdf/Nandor_long.pdf)'s the same CV with more details (3 pages).
 
