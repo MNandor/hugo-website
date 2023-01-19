@@ -1,0 +1,16 @@
+#!/bin/bash
+
+cd "$(dirname "$0")"
+
+msg=$(git log -n 1 --format="%s")
+
+hugo
+
+cd - > /dev/null
+cd "$(dirname "$0")/public"
+
+git add .
+git commit -m "$msg"
+
+cd - > /dev/null
+
