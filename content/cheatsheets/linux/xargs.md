@@ -10,7 +10,7 @@
 # Separation
 - by default, xargs collects all of stdin and executes the command once
 - this can be changed to run the command every X lines or space-separated words
-- this can be changed to run the command every X lines or space-separated words
+- a custom delimiter can also be given
 
 Front|Hotkey|Command|Notes|Perskey
 -|-|-|-|-
