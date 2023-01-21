@@ -12,5 +12,7 @@ cd "$(dirname "$0")/public"
 git add .
 git commit -m "$msg"
 
+git push
+
 cd - > /dev/null
 
