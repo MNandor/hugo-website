@@ -1,3 +1,14 @@
+:root {
+    --main-color:#FF0000;
+	--var-black:#000000;
+	--var-gray:#101010;
+	--var-lgray:#202020;
+
+	--var-orange:#FF5000;
+	--var-lorange:#FFA000;
+	--var-code:yellow;
+}
+
 body {
 	padding: 0px;
 	margin-left: 0px;
@@ -8,8 +19,8 @@ body {
 
 
 #maindiv, #headerdiv, #imgdiv {
-	background-color: #101010;
-	color: #FF0000;
+	background-color: var(--var-gray);
+	color: var(--main-color);
 
 }
 
@@ -17,15 +28,15 @@ body {
 	#maindiv, #headerdiv, #imgdiv {
 		margin-left: 15%;
 		margin-right: 15%;
-		border: 2px solid #FF0000;
+		border: 2px solid var(--main-color);
 		border-radius: 20px;
 	}
 }
 
 @media only screen and (max-width: 800px){
 	#maindiv, #headerdiv, #imgdiv {
-		border-top: 2px solid #FF0000;
-		border-bottom: 2px solid #FF0000;
+		border-top: 2px solid var(--main-color);
+		border-bottom: 2px solid var(--main-color);
 	}
 	#headerdiv{
 		flex-wrap: wrap;
@@ -39,7 +50,7 @@ body {
 }
 
 img {
-	border: 2px solid #FF0000;
+	border: 2px solid var(--main-color);
 	border-radius: 20px;
 	margin: 16px;
 	max-width: 90%;
@@ -50,14 +61,14 @@ img {
 table {
 	text-align: left;
 	margin-left: 36px;
-	border: 2px solid #FF0000;
+	border: 2px solid var(--main-color);
 	border-radius: 20px;
 }
 
 
 td:not(:empty), th {
-	color: #FF0000;
-	background: #202020;
+	color: var(--main-color);
+	background: var(--var-lgray);
 }
 
 
@@ -79,11 +90,11 @@ td:not(:empty), th {
 }
 
 a {
-	color: #FF5000;
+	color: var(--var-orange);
 }
 
 a:hover {
-	color: #FFA000;
+	color: var(--var-lorange);
 }
 
 
@@ -97,17 +108,17 @@ a:hover {
 }
 
 body {
-	background-color: #000000;
+	background-color: var(--var-black);
 }
 
 
 
 h1 {
-	border-bottom: 2px solid #FF0000;
+	border-bottom: 2px solid var(--main-color);
 }
 
 hr {
-	border-top: 1px solid #FF0000;
+	border-top: 1px solid var(--main-color);
 	border-bottom: none;
 	margin-left: 16px;
 	margin-right: 40%;
@@ -141,16 +152,16 @@ p code, li code{
 	/* <pre> is used for code blocks */
 	margin: 0px;
 	padding: 1px;
-	border: 1px solid red;
-	color: yellow;
+	border: 1px solid var(--main-color);
+	color: var(--var-code);
 }
 
 code {
-	background-color: #000000;
+	background-color: var(--var-black);
 }
 
 blockquote {
-	border-left: 2px solid #FF0000;
+	border-left: 2px solid var(--main-color);
 	margin-left: 46px;
 	opacity: 70%;
 }
@@ -161,16 +172,16 @@ blockquote p{
 
 
 pre code {
-	color: yellow;
+	color: var(--var-code);
 }
 
 pre{
-	background-color: black; !important
+	background-color: var(--var-black); !important
 	overflow: auto !important;
 	word-break: normal !important;
 	word-wrap: normal !important;
 	white-space: pre-wrap !important;
-	border-left: 1px dashed #FF0000;
+	border-left: 1px dashed var(--main-color);
 	padding-left: 16px;
 }
 
@@ -191,8 +202,8 @@ h1 {
 }
 
 ::selection {
-	background: #FF0000;
-	color: #000000;
+	background: var(--main-color);
+	color: var(--var-black);
 }
 
 @media print {
