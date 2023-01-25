@@ -16,8 +16,14 @@
 			<h2>
 				<time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "2006 Jan 02" }}</time>
 				&ndash;
+
 				{{ if in .Params.tags "german" }} 🇩🇪 {{ end }}
 				{{ if in .Params.tags "romanian" }} 🇷🇴 {{ end }}
+
+				{{ if eq .BundleType "branch" }}
+				{{ partial "fmark.html" }}
+				{{ end }}
+
 				<a href="{{ .RelPermalink }}">{{ .Title }}</a>
 			</h2>
 			<p>{{ .Summary }}</p>

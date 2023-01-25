@@ -1,5 +1,5 @@
 ---
-title: "Ai Stuff"
+title: "AI Stuff"
 date: 2023-01-17T13:56:25+02:00
 ---
 
