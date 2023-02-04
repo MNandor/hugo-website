@@ -210,6 +210,7 @@ I found some contradicting instructions for rooting with Magisk, but the actual 
 4. flash Magisk.zip
 
 <!-- ## Xposed -->
+<!-- ## todo fox magisk module manager -->
 
 # Conclusion
 
@@ -217,5 +218,4 @@ That's pretty much it!
 I'm extremely happy with the result.
 I've gone through configuring LineageOS to my liking.
 
-I will soon have a new blog post about the apps I decided to install.
-<!-- todo -->
+Click [here](../android-apps) to see all the apps I decided to install.
