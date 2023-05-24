@@ -16,7 +16,7 @@ body{
       width: 100%;
 }
 .imgbg{
-    background-image: url("https://media.istockphoto.com/id/941757338/photo/male-fitness-athele-exercising.jpg?s=612x612&w=0&k=20&c=zfPPL_Sehct26JyOYIGkdyabCnnQFGiyhussf5aT_c0=");
+    background-image: url("/img/wout/1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
