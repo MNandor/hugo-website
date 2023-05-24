@@ -87,6 +87,18 @@ h1{
     color: #fff;
 
 }
+.wout{
+    font-family: 'IMMORTAL', sans-serif;
+    color:  #C75146;
+    text-shadow: 1px 1px #AD2E24,
+             2px 0 #AD2E24,
+             1px -1px #AD2E24,
+             0 -2px #AD2E24,
+             -1px -1px #AD2E24,
+             -2px 0 #AD2E24,
+             -1px 1px #AD2E24,
+             0 2px #AD2E24;
+}
 .mainTitle{
     color: #C75146;
     text-transform: uppercase;
