@@ -1,6 +1,6 @@
 body{
     background-color: #000000 !important;
-    color: #fff;
+    color: #c8ad6f;
 }
 @font-face {
     font-family: 'IMMORTAL';
@@ -85,7 +85,7 @@ h1{
 
 .button_container a:hover{
     background-color: #C75146;
-    color: #fff;
+    color: #c8ad6f;
 
 }
 .wout{
@@ -186,7 +186,7 @@ h1{
    color: #EFD28D; 
 }
 .maizecrayola{
-    color:#7f6c3f;
+	color:#c8ad6f;
 }
 .BGblack{
     background-color:#FF000000 ;
