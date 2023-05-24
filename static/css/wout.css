@@ -1,0 +1,233 @@
+body{
+    background-color: #000000 !important;
+    color: #fff;
+}
+@font-face {
+    font-family: 'IMMORTAL';
+    src: url('/css/IMMORTAL.ttf') format('truetype');
+  }
+.shadowtop{
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(0,0,0,0.7511379551820728) 30%, rgba(255,255,255,0) 100%);
+    height: 40px;
+    overflow: hidden;
+    position: fixed;
+      top: 0;
+      width: 100%;
+}
+.imgbg{
+    background-image: url("https://media.istockphoto.com/id/941757338/photo/male-fitness-athele-exercising.jpg?s=612x612&w=0&k=20&c=zfPPL_Sehct26JyOYIGkdyabCnnQFGiyhussf5aT_c0=");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.imgbg p{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.button_container{
+    display: flex;
+    justify-content: space-around;
+    /* background-color: #AD2E24; */
+    flex-direction:column;
+    padding: 5px;    
+}
+.button_container .Flex{
+    margin-bottom: 10px;
+    /* width: 100%; */
+
+}
+.button_container a{
+    font-size: large;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.btn_item{
+    display: flex;
+    justify-content: center;
+}
+.title{
+    text-transform: uppercase;
+}
+.revers{
+    flex-direction: row-reverse;
+}
+.revers .line{
+    border-left:2px solid #AD2E24 ;
+    border-right:none ;
+}
+.line{
+    border-right:2px solid #AD2E24 ;
+}
+.textContent{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.Flex{
+    display: flex;
+    justify-content: center;
+    /* margin-left: 7px; */
+}
+.Flex a{
+    min-width: 180px;
+
+}
+h1{
+    color: #AD2E24; 
+}
+
+.button_container a:hover{
+    background-color: #C75146;
+    color: #fff;
+
+}
+.mainTitle{
+    color: #C75146;
+    text-transform: uppercase;
+    font-family: 'IMMORTAL', sans-serif;
+    text-align: center;
+    text-shadow: 1.41px 1.41px #AD2E24,
+             2px 0 #AD2E24,
+             1.41px -1.41px #AD2E24,
+             0 -2px #AD2E24,
+             -1.41px -1.41px #AD2E24,
+             -2px 0 #AD2E24,
+             -1.41px 1.41px #AD2E24,
+             0 2px #AD2E24;
+}
+.img img{
+    /* max-width: 500px; */
+    width: 90%;
+    object-fit: cover;
+}
+.top{
+    display: flex;
+    justify-content: end;
+}
+.top .btn{
+    margin-right: 30px;
+    margin-bottom: 5px;
+    background-color: #C75146 !important;
+    color: #000 !important;
+    border-radius: 25%;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    font-size: 20px;
+    padding: 8px;
+}
+.button_container .btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.Icons{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.btn i{
+    margin-left: 6px;
+    margin-right: 15px;
+    width: 28px;
+}
+.btn .from{
+    margin-left: 6px;
+    width: 160px;
+    font-size: 14px;
+    margin-bottom: -8px;
+    text-align: start;
+}
+.btn .storname{
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 1.3rem;
+    text-align: start;
+    margin-left: 6px;
+}
+/* .btn .br{
+    display: block;   
+} */
+/* color */
+.black{
+    color:#000000 ;
+}
+.white{
+    color: #FFFFFFFF;
+}
+.cedarchest{
+    color: #C75146;
+}
+.firebrick{
+    color: #AD2E24;
+}
+.buff{
+   color: #EFD28D; 
+}
+.maizecrayola{
+    color:#7f6c3f;
+}
+.BGblack{
+    background-color:#FF000000 ;
+}
+.BGwhite{
+    background-color: #FFFFFFFF;
+}
+.BGcedarchest{
+    background-color: #C75146;
+}
+.BGfirebrick{
+    background-color: #AD2E24;
+}
+.BGbuff{
+   background-color: #EFD28D; 
+}
+.BGmaizecrayola{
+    background-color:#7f6c3f;
+}
+
+/* media Sqreen */
+
+
+
+@media screen and (min-width: 576px) {
+    .button_container {
+        background-color: #000000 !important;
+        flex-direction:row;
+    }
+    .button_container button{
+        font-size: x-large;
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    .button_container .Flex{
+        width: 100%;
+     
+    }  
+    .btn{
+        /* width: 100% !important; */
+    }
+    .top .btn{
+        border-radius: 0;
+        width: 300px;
+    }
+    .Flex{
+        width: 350px;
+    }
+    /* .btn .br{
+        display: none;   
+    } */
+}
+::selection {
+	background: #C75146;
+	color:#000;
+}
