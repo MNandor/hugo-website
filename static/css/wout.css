@@ -235,6 +235,7 @@ h1{
     }
     .Flex{
         width: 350px;
+		margin: auto;
     }
     /* .btn .br{
         display: none;   
