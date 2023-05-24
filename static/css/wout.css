@@ -16,7 +16,7 @@ body{
       width: 100%;
 }
 .imgbg{
-    background-image: url("https://media.istockphoto.com/id/941757338/photo/male-fitness-athele-exercising.jpg?s=612x612&w=0&k=20&c=zfPPL_Sehct26JyOYIGkdyabCnnQFGiyhussf5aT_c0=");
+    background-image: url("/img/wout/1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -53,6 +53,7 @@ body{
 }
 .title{
     text-transform: uppercase;
+    
 }
 .revers{
     flex-direction: row-reverse;
@@ -87,18 +88,30 @@ h1{
     color: #fff;
 
 }
+.wout{
+    font-family: 'IMMORTAL', sans-serif;
+    color:  #C75146;
+    text-shadow: 1px 1px #AD2E24,
+             2px 0 #AD2E24,
+             1px -1px #AD2E24,
+             0 -2px #AD2E24,
+             -1px -1px #AD2E24,
+             -2px 0 #AD2E24,
+             -1px 1px #AD2E24,
+             0 2px #AD2E24;
+}
 .mainTitle{
     color: #C75146;
-    text-transform: uppercase;
     font-family: 'IMMORTAL', sans-serif;
     text-align: center;
-    text-shadow: 1.41px 1.41px #AD2E24,
+    font-size: 4.6rem;
+    text-shadow: 2.5px 2.5px #AD2E24,
              2px 0 #AD2E24,
-             1.41px -1.41px #AD2E24,
+             2.5px -2.5px #AD2E24,
              0 -2px #AD2E24,
-             -1.41px -1.41px #AD2E24,
+             -2.5px -2.5px #AD2E24,
              -2px 0 #AD2E24,
-             -1.41px 1.41px #AD2E24,
+             -2.5px 2.5px #AD2E24,
              0 2px #AD2E24;
 }
 .img img{
