@@ -59,5 +59,8 @@ Hiking. I love hiking.
 ---
 
 XMR: `45U4M2B9iZeXJ4wrdq4aa79smof9Bpr8NXsJSkkJvoJGNwmysDgtV4CJUpatSkVLCQNkao3RWoHY66bGSJRzpAoaCKYYM9p`
+
+[Paypal](https://paypal.me/majlanandor)
+
 <!-- todo PGP -->
 
