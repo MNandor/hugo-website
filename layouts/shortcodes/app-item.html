@@ -1,0 +1,12 @@
+
+<div class="flex-item">
+    {{ with .Get "image" }}
+        <img src="{{ . }}" alt="Item Image">
+    {{ end }}
+    {{ with .Get "title" }}
+        <h2 style="text-align: center;">{{ . }}</h2>
+    {{ end }}
+    {{ with .Get "text" }}
+        <p>{{ . }}</p>
+    {{ end }}
+</div>
